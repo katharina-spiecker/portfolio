@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+:root {
+    --main-white: #f0f0f0;
+    --main-purple: #590D4D;
+    --main-orange: #F08F2E;
+    --main-turquise: #dcfcf7;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    padding: 80px 30px 50px 30px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: var(--main-white);
+    padding: 0 20px;
+}
+
+#navbar {
+    width: 20%;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li a {
+    color: var(--main-white);
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+#navbar li a:hover {
+    position: relative;
+    top: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 97vh;
+    background: black;
+}
+
+.project-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: auto;
+    padding: 10px 15px;
+    color: #000000;
+    text-align: center;
+}
+
+
+/* animation */
+
+.line {
+    z-index: 1;
+    position: relative;
+    width: 28em;
+    overflow: hidden;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    font-family: "Anonymous Pro", monospace;
+    color: #fff;
+}
+
+.anim-typewriter {
+    /* animation name, duration, animation-timing-function, animation-delay */
+    animation: typewriter 4s steps(40) 0.5s 1, blinkTextCursor 500ms steps(40) infinite;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 28em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent
+    }
+}
+
+
+/* technologies section */
+
+#technologies {
+    margin: 0;
+    padding: 3px;
+    background-color: rgb(168, 168, 168);
+    padding: 50px auto;
+}
+
+.technologies-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+.technologies-list li {
+    border: 1px solid grey;
+    padding: 4px 15px;
+    border-radius: 50px;
+    background-color: grey;
+    color: var(--main-turquise);
+}
+
+.technologies-list li:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+
+/* Projects section */
+
+#projects {
+    padding: 80px 0 250px 0;
+    background-color: #fff;
+}
+
+.heading {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: auto;
+    padding: 10px 15px;
+    
+}
+
+#projects-grid {
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 30% 30%;
+    row-gap: 300px;
+    column-gap: 150px;
+}
+
+.project-tile {
+    width: 100%;
+    height: 150%;
+}
+
+.project-tile iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid grey;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-project {
+    font-size: 1.3rem;
+    border: 1px solid grey;
+    border-radius: 50px;
+    background-color: grey;
+    color: var(--main-turquise);
+    padding: 7px 15px;
+    margin-top: 15px;
+}
+
+.view-project:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+/* api projects section */
+
+#api-projects {
+    padding: 80px 0;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+#api-projects-wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+}
+
+#api-projects-wrapper a {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+    padding: 5%;
+}
+
+
+/* contact section */
+
+#contact-section {
+    padding: 10px 0;
+    background-color: var(--main-purple);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 20% 10% 10% 10% 50%;
+}
+
+#contact-section a {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-left: 25px;
+    text-align: center;
+}
