@@ -1,151 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <span id="brand">Katharina Spiecker</span>
-        <ul id="navbar">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-        </ul>
+      <span id="brand">Katharina Spiecker</span>
+      <ul id="navbar">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
     </nav>
 
     <header>
-
-        <h1 class="line anim-typewriter">Are you ready for transformational development?</h1>
-
+      <h1 class="line anim-typewriter">
+        Are you ready for transformational development?
+      </h1>
     </header>
     <main>
-        <section id="technologies">
-            <ul class="technologies-list">
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Java</li>
-                <li>Node.js</li>
-                <li>Google Analytics</li>
-                <li>MongoDB</li>
-                <li>SQL</li>
-            </ul>
-        </section>
+      <section id="technologies">
+        <ul class="technologies-list">
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Java</li>
+          <li>Node.js</li>
+          <li>Google Analytics</li>
+          <li>MongoDB</li>
+          <li>SQL</li>
+        </ul>
+      </section>
 
-        <section id="projects" class="center-text">
-
-            <div id="projects-grid">
-
-                <figure class="project-tile">
-                    <div class="title-wrapper">
-                        <h2 class="project-title">Mastermind</h2>
-                    </div>
-                    <iframe src="https://katharina-spiecker.github.io/mastermind/"></iframe>
-                    <button class="view-project" onclick="window.open('https://katharina-spiecker.github.io/mastermind/', '_blank')">View</button>
-                </figure>
-
-                <figure class="project-tile">
-                    <div class="title-wrapper">
-                        <h2 class="project-title">Quote generator</h2> 
-                    </div>
-                    <iframe src="https://katharina-spiecker.github.io/react-quote-generator/" title="Mastermind Web App"></iframe>
-                    <button class="view-project" onclick="window.open('https://katharina-spiecker.github.io/react-quote-generator/', '_blank')">View</button>
-                </figure>
-
-                
-                <figure class="project-tile">
-                    <div class="title-wrapper">
-                        <h2 class="project-title">Calculator</h2>
-                    </div>
-                    <iframe src="https://katharina-spiecker.github.io/react-calculator/"></iframe>
-                    <button class="view-project" onclick="window.open('https://katharina-spiecker.github.io/responsive-landing-page/', '_blank')">View</button>
-                </figure>
-                
-                <figure class="project-tile">
-                    <div class="title-wrapper">
-                        <h2 class="project-title">Pomodoro Timer</h2>
-                    </div>
-                    <iframe src="https://katharina-spiecker.github.io/pomodoro-timer/"></iframe>
-                    <button class="view-project" onclick="window.open('https://katharina-spiecker.github.io/pomodoro-timer/', '_blank')">View</button>
-                </figure>
-                
-                <figure class="project-tile">
-                    <div class="title-wrapper">
-                        <h2 class="project-title">Boostrap Website</h2>
-                    </div>
-                    <iframe src="https://katharina-spiecker.github.io/bootstrap-LP/"></iframe>
-                    <button class="view-project" onclick="window.open('https://katharina-spiecker.github.io/bootstrap-LP/', '_blank')">View</button>
-                </figure>
-                
-                <figure class="project-tile">
-                    <div class="title-wrapper">
-                        <h2 class="project-title">Landing Page</h2> 
-                    </div>
-                    <iframe src="https://katharina-spiecker.github.io/responsive-landing-page/"></iframe>
-                    <button class="view-project" onclick="window.open('https://katharina-spiecker.github.io/responsive-landing-page/', '_blank')">View</button>
-                </figure>
+      <section id="projects" class="center-text">
+        <div id="projects-grid">
+          <figure class="project-tile">
+            <div class="title-wrapper">
+              <h2 class="project-title">Mastermind</h2>
             </div>
-            
-            
-            
-        </section>
+            <iframe
+              src="https://katharina-spiecker.github.io/mastermind/"
+            ></iframe>
+            <button
+              class="view-project"
+              onclick="window.open('https://katharina-spiecker.github.io/mastermind/', '_blank')"
+            >
+              View
+            </button>
+          </figure>
 
-        <section id="api-projects">
-            <h2 class="heading">Backend Projects</h2>
-
-            <div id="api-projects-wrapper">
-                <a href="https://boilerplate-project-timestamp.katharinaspieck.repl.co" target="_blank">
-                    <i class="far fa-clock"></i>
-                    <h3>Timestamp</h3>
-
-                </a>
-
-                <a href="https://boilerplate-project-exercisetracker.katharinaspieck.repl.co" target="_blank">
-                    <i class="fas fa-dumbbell"></i>
-                    <h3>Exercise tracker</h3>
-
-                </a>
-
-                <a href="https://boilerplate-project-headerparser.katharinaspieck.repl.co" target="_blank">
-                    <i class="far fa-question-circle"></i>
-                    <h3>Who am I</h3>
-
-                </a>
+          <figure class="project-tile">
+            <div class="title-wrapper">
+              <h2 class="project-title">Quote generator</h2>
             </div>
+            <iframe
+              src="https://katharina-spiecker.github.io/react-quote-generator/"
+              title="Mastermind Web App"
+            ></iframe>
+            <button
+              class="view-project"
+              onclick="window.open('https://katharina-spiecker.github.io/react-quote-generator/', '_blank')"
+            >
+              View
+            </button>
+          </figure>
 
-        </section>
+          <figure class="project-tile">
+            <div class="title-wrapper">
+              <h2 class="project-title">Calculator</h2>
+            </div>
+            <iframe
+              src="https://katharina-spiecker.github.io/react-calculator/"
+            ></iframe>
+            <button
+              class="view-project"
+              onclick="window.open('https://katharina-spiecker.github.io/responsive-landing-page/', '_blank')"
+            >
+              View
+            </button>
+          </figure>
 
+          <figure class="project-tile">
+            <div class="title-wrapper">
+              <h2 class="project-title">Pomodoro Timer</h2>
+            </div>
+            <iframe
+              src="https://katharina-spiecker.github.io/pomodoro-timer/"
+            ></iframe>
+            <button
+              class="view-project"
+              onclick="window.open('https://katharina-spiecker.github.io/pomodoro-timer/', '_blank')"
+            >
+              View
+            </button>
+          </figure>
+
+          <figure class="project-tile">
+            <div class="title-wrapper">
+              <h2 class="project-title">Boostrap Website</h2>
+            </div>
+            <iframe
+              src="https://katharina-spiecker.github.io/bootstrap-LP/"
+            ></iframe>
+            <button
+              class="view-project"
+              onclick="window.open('https://katharina-spiecker.github.io/bootstrap-LP/', '_blank')"
+            >
+              View
+            </button>
+          </figure>
+
+          <figure class="project-tile">
+            <div class="title-wrapper">
+              <h2 class="project-title">Landing Page</h2>
+            </div>
+            <iframe
+              src="https://katharina-spiecker.github.io/responsive-landing-page/"
+            ></iframe>
+            <button
+              class="view-project"
+              onclick="window.open('https://katharina-spiecker.github.io/responsive-landing-page/', '_blank')"
+            >
+              View
+            </button>
+          </figure>
+        </div>
+      </section>
+
+      <section id="api-projects">
+        <h2 class="heading">Backend Projects</h2>
+
+        <div id="api-projects-wrapper">
+          <a
+            href="https://boilerplate-project-timestamp.katharinaspieck.repl.co"
+            target="_blank"
+          >
+            <i class="far fa-clock"></i>
+            <h3>Timestamp</h3>
+          </a>
+
+          <a
+            href="https://boilerplate-project-exercisetracker.katharinaspieck.repl.co"
+            target="_blank"
+          >
+            <i class="fas fa-dumbbell"></i>
+            <h3>Exercise tracker</h3>
+          </a>
+
+          <a
+            href="https://boilerplate-project-headerparser.katharinaspieck.repl.co"
+            target="_blank"
+          >
+            <i class="far fa-question-circle"></i>
+            <h3>Who am I</h3>
+          </a>
+        </div>
+      </section>
     </main>
     <footer id="contact-section">
+      <h2 class="heading">Contact</h2>
 
-        <h2 class="heading">Contact</h2>
+      <a href="https://github.com/katharina-spiecker" target="_blank">
+        <i class="fab fa-github"></i><br />
+        Github
+      </a>
 
-        <a href="https://github.com/katharina-spiecker" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/katharina-spiecker-29827713b"
+        target="_blank"
+      >
+        <i class="fab fa-linkedin"></i><br />
+        LinkedIn
+      </a>
 
-            <i class="fab fa-github"></i><br> Github
-
-        </a>
-
-        <a href="https://www.linkedin.com/in/katharina-spiecker-29827713b" target="_blank">
-
-            <i class="fab fa-linkedin"></i><br> LinkedIn
-
-        </a>
-
-        <a href=" mailto: kathispiecker@gmail.com">
-
-            <i class="fas fa-at"></i><br> Email
-
-        </a>
-
+      <a href=" mailto: kathispiecker@gmail.com">
+        <i class="fas fa-at"></i><br />
+        Email
+      </a>
     </footer>
-
-</body>
-
+  </body>
 </html>
