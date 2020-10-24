@@ -8,8 +8,11 @@
     --main-turquise: #dcfcf7;
 }
 
-html {
+* {
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
@@ -34,11 +37,10 @@ a {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     font-size: 1.1rem;
-    box-sizing: border-box;
     background-color: #000000;
     color: var(--main-white);
     padding: 0 20px;
@@ -49,11 +51,9 @@ nav {
 }
 
 #navbar {
-    width: 60%;
     text-transform: uppercase;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
 }
 
 #navbar li a {
@@ -207,7 +207,6 @@ header {
 }
 
 #projects-grid {
-    box-sizing: border-box;
     padding: 20px;
     margin-top: 30px;
     display: grid;
