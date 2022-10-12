@@ -48,9 +48,6 @@
         } else if (window.scrollY < sectionHeight * 3) {
             let newColor = sections[2].dataset.color;
             changeColor(newColor);
-        } else if (window.scrollY < sectionHeight * 4) {
-            let newColor = sections[3].dataset.color;
-            changeColor(newColor);
         }
     });
 
