@@ -1,0 +1,36 @@
+footer {
+    background-color: $color-purple;
+    padding: 10px 0;
+    color: #fff;
+    width: 100%;
+}
+
+#contact-section {
+    display: grid;
+    grid-template-columns: 20% 10% 10% 10% 50%;
+    a {
+        font-size: 1.3rem;
+        color: #fff;
+        margin-left: 25px;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.5s;
+        &:hover {
+            color: $color-orange;
+        }
+    }
+}
+
+@media (max-width: 942px) {
+    #contact-section h2{
+        font-size: 1.1rem;
+    }
+
+    #contact-section {
+        grid-template-columns: 30% 20% 20% 20% 10%;
+    }
+    
+    #contact-section a {
+        font-size: 1.1rem;
+    }
+}

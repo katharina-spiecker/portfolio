@@ -1,0 +1,49 @@
+/* animation */
+
+.section {
+    height: 600px;
+}
+
+.typewriter {
+    font-size: 100px;
+    font-family: 'Quantico', sans-serif;
+    letter-spacing: 4px;
+    color: $color-orange;
+}
+
+.typewriter span {
+    display: none;
+}
+
+.arrow-wrapper {
+    width: 100%;
+    text-align: center;
+    font-family: $font-robot;
+    font-size: 80px;
+    color: $color-orange;
+    span {
+        display: block;
+    }
+    .arrow-top {
+        line-height: 50px;
+    }
+    .arrow-bottom {
+        line-height: 50px;
+    }
+}
+
+.blink {
+    animation-name: blink-animation;
+    animation-duration: 1s;
+    animation-timing-function: steps(5, start);
+    animation-iteration-count: infinite; 
+}
+
+@keyframes blink-animation {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: hidden;
+    }
+}
