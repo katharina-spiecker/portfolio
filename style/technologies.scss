@@ -1,5 +1,5 @@
 .technologies-section {
-    color: $color-pink;
+    color: $color-orange;
 
     .box {
         transition: all 1s;
@@ -30,7 +30,7 @@
         grid-row-start: 7;
     }
     .box-7 {
-        grid-column-start: 10;
+        grid-column-start: 8;
         grid-row-start: 7;
     }
     .box-8 {
@@ -38,11 +38,11 @@
         grid-row-start: 1;
     }
     .box-9 {
-        grid-column-start: 6;
+        grid-column-start: 4;
         grid-row-start: 3;
     }
     .box-10 {
-        grid-column-start: 11;
+        grid-column-start: 10;
         grid-row-start: 1;
     }
     .box-11 {
@@ -71,5 +71,22 @@
     grid-row-gap: 16px;
     overflow: hidden;
     font-family: 'Quantico', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
+}
+
+@media (min-width: 992px){
+    .technologies-grid {
+        font-size: 50px;
+    }
+    .technologies-section {
+        .box-7 {
+            grid-column-start: 10;
+        }
+        .box-9 {
+            grid-column-start: 6;
+        }
+        .box-10 {
+            grid-column-start: 11;
+        }
+    }
 }

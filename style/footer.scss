@@ -1,17 +1,16 @@
 footer {
     background-color: $color-purple;
     padding: 10px 0;
-    color: #fff;
+    color: $color-turquise;
     width: 100%;
 }
 
 #contact-section {
     display: grid;
-    grid-template-columns: 20% 10% 10% 10% 50%;
+    grid-template-columns: 40% 20% 20% 20%;
     a {
-        font-size: 1.3rem;
-        color: #fff;
-        margin-left: 25px;
+        font-size: 1.1rem;
+        color: $color-turquise;
         text-align: center;
         text-decoration: none;
         transition: color 0.5s;
@@ -19,18 +18,19 @@ footer {
             color: $color-orange;
         }
     }
+    .heading {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin: auto;
+        padding: 10px 15px;
+    }
 }
 
-@media (max-width: 942px) {
-    #contact-section h2{
-        font-size: 1.1rem;
-    }
-
+@media (min-width: 992px){
     #contact-section {
-        grid-template-columns: 30% 20% 20% 20% 10%;
-    }
-    
-    #contact-section a {
-        font-size: 1.1rem;
+        grid-template-columns: 20% 10% 10% 10% 50%;
+        a {
+            font-size: 1.3rem;
+        }
     }
 }

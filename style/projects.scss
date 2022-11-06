@@ -4,6 +4,7 @@
     margin: auto;
     padding: 10px 15px;
     text-align: center;
+    width: 100%;
 
     iframe {
         background-color: $color-white;
@@ -19,20 +20,16 @@
     }
 
     .project-title {
-       color: $color-orange;
+       color: $color-turquise;
        text-decoration: none;
     }
 }
 
 #projects-grid {
-    padding: 20px;
-    margin-top: 30px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    grid-template-columns: 40% 40%;
-    grid-gap: 50px;
+    width: 100%;;
 }
 
 .view-project {
@@ -49,21 +46,17 @@
     background-color: rgb(56, 56, 56);
 }
 
-@media (max-width: 1050px) {
+@media (min-width: 992px){
     #projects-grid {
-        grid-template-columns: 50% 50%;
-        grid-gap: 40px;
-    }
-}
-
-@media (max-width: 836px) {
-    #projects-grid {
-        display: flex;
-        flex-direction: column;
+        margin-top: 30px;
+        padding: 20px;
+        display: grid;
         justify-content: center;
+        align-items: center;
+        grid-template-columns: 40% 40%;
+        grid-gap: 50px;
+        .project-tile {
+            width: auto;
+        }
     }
-
-    .project-tile {
-        width: 100%;
-    }  
 }
