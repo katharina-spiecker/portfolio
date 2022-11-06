@@ -13,7 +13,7 @@
     const timer = setInterval(onTick, 250);
     
     function onTick() {
-        spans[index].style = "display:inline-block";
+        spans[index].classList.add("visible");
         index++;
         if (index === spans.length) {
             clearInterval(timer);
@@ -36,16 +36,17 @@
 // when scrolling over sections, background changes
 (function(){
     const sections = document.querySelectorAll(".section");
-    const sectionHeight = sections[0].offsetHeight;
+    let transitionHeight = sections[0].offsetHeight;
+    transitionHeight -= 100;
 
     document.addEventListener("scroll", () => {
-        if (window.scrollY < sectionHeight) {
+        if (window.scrollY < transitionHeight) {
             let newColor = sections[0].dataset.color;
             changeColor(newColor);
-        } else if (window.scrollY < sectionHeight * 2) {
+        } else if (window.scrollY < transitionHeight * 2) {
             let newColor = sections[1].dataset.color;
             changeColor(newColor);
-        } else if (window.scrollY < sectionHeight * 3) {
+        } else if (window.scrollY < transitionHeight * 3) {
             let newColor = sections[2].dataset.color;
             changeColor(newColor);
         }

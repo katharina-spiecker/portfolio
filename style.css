@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
-/* animation */
-.section {
-  height: 600px;
-}
-
 .typewriter {
   font-size: 100px;
   font-family: "Quantico", sans-serif;
@@ -13,7 +8,7 @@
 }
 
 .typewriter span {
-  display: none;
+  visibility: hidden;
 }
 
 .arrow-wrapper {
@@ -56,93 +51,65 @@
 }
 .technologies-section .box-1 {
   grid-column-start: 3;
-  grid-column-end: 4;
   grid-row-start: 4;
-  grid-row-end: 5;
 }
 .technologies-section .box-2 {
   grid-column-start: 8;
-  grid-column-end: 9;
-  grid-row-start: 7;
-  grid-row-end: 8;
+  grid-row-start: 6;
 }
 .technologies-section .box-3 {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 10;
-  grid-row-end: 11;
+  grid-column-start: 8;
+  grid-row-start: 2;
 }
 .technologies-section .box-4 {
   grid-column-start: 6;
-  grid-column-end: 7;
   grid-row-start: 5;
-  grid-row-end: 6;
 }
 .technologies-section .box-5 {
   grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 7;
-  grid-row-end: 8;
+  grid-row-start: 6;
 }
 .technologies-section .box-6 {
   grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 9;
-  grid-row-end: 10;
+  grid-row-start: 7;
 }
 .technologies-section .box-7 {
   grid-column-start: 10;
-  grid-column-end: 11;
-  grid-row-start: 8;
-  grid-row-end: 9;
+  grid-row-start: 7;
 }
 .technologies-section .box-8 {
   grid-column-start: 3;
-  grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 2;
 }
 .technologies-section .box-9 {
-  grid-column-start: 7;
-  grid-column-end: 8;
+  grid-column-start: 6;
   grid-row-start: 3;
-  grid-row-end: 4;
 }
 .technologies-section .box-10 {
   grid-column-start: 11;
-  grid-column-end: 12;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 1;
 }
 .technologies-section .box-11 {
   grid-column-start: 10;
-  grid-column-end: 11;
   grid-row-start: 3;
-  grid-row-end: 4;
 }
 .technologies-section .box-12 {
   grid-column-start: 9;
-  grid-column-end: 10;
-  grid-row-start: 9;
-  grid-row-end: 10;
+  grid-row-start: 4;
 }
 .technologies-section .box-13 {
   grid-column-start: 5;
-  grid-column-end: 6;
   grid-row-start: 2;
-  grid-row-end: 3;
 }
 .technologies-section .box-14 {
   grid-column-start: 2;
-  grid-column-end: 3;
   grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 .technologies-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: repeat(12, 8.3%);
+  grid-template-rows: repeat(8, auto);
   grid-row-gap: 16px;
   grid-row-gap: 16px;
   overflow: hidden;
@@ -150,26 +117,28 @@
   font-size: 50px;
 }
 
-#projects {
-  padding: 80px 0;
-}
-
 .project-tile {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin: auto;
   padding: 10px 15px;
-  color: #f0f0f0;
   text-align: center;
 }
 .project-tile iframe {
   background-color: #f0f0f0;
+  width: 100%;
+  height: 400px;
+  border: 2px solid grey;
 }
 .project-tile img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
+}
+.project-tile .project-title {
+  color: #F97F51;
+  text-decoration: none;
 }
 
 #projects-grid {
@@ -181,12 +150,6 @@
   width: 100%;
   grid-template-columns: 40% 40%;
   grid-gap: 50px;
-}
-
-.project-tile iframe {
-  width: 100%;
-  height: 400px;
-  border: 2px solid grey;
 }
 
 .view-project {
@@ -260,8 +223,7 @@ footer {
 body {
   padding: 0;
   margin: 0;
-  background-color: #fff;
-  transition: background-color 1s;
+  transition: background-color 0.5s;
   scroll-behavior: smooth;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
@@ -271,12 +233,16 @@ h1, h2, h3, h4 {
   font-family: "Quantico", sans-serif;
 }
 
-.main {
-  padding-bottom: 100px;
+.section {
+  height: 100vh;
+  padding: 80px 30px 100px 30px;
+}
+.section#projects {
+  height: auto;
 }
 
-section {
-  padding: 80px 30px 50px 30px;
+.main {
+  padding-bottom: 100px;
 }
 
 a {

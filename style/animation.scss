@@ -1,9 +1,3 @@
-/* animation */
-
-.section {
-    height: 600px;
-}
-
 .typewriter {
     font-size: 100px;
     font-family: 'Quantico', sans-serif;
@@ -12,7 +6,7 @@
 }
 
 .typewriter span {
-    display: none;
+    visibility: hidden;
 }
 
 .arrow-wrapper {
