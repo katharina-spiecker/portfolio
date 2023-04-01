@@ -1,8 +1,9 @@
 footer {
-    background-color: $color-purple;
+    background-color: $color-black;
     padding: 10px 0;
-    color: $color-turquise;
+    color: $color-white;
     width: 100%;
+    font-family: $font-normal;
 }
 
 #contact-section {
@@ -10,7 +11,7 @@ footer {
     grid-template-columns: 40% 20% 20% 20%;
     a {
         font-size: 1.1rem;
-        color: $color-turquise;
+        color: $color-white;
         text-align: center;
         text-decoration: none;
         transition: color 0.5s;

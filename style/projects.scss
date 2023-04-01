@@ -20,8 +20,9 @@
     }
 
     .project-title {
-       color: $color-turquise;
+       color: $color-black;
        text-decoration: none;
+       font-family: $font-normal;
     }
 }
 
@@ -37,7 +38,7 @@
     border: 1px solid grey;
     border-radius: 50px;
     background-color: grey;
-    color: $color-turquise;
+    color: $color-white;
     padding: 7px 15px;
     margin-top: 15px;
 }

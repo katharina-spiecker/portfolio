@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 .typewriter {
   font-size: 50px;
   font-family: "Quantico", sans-serif;
@@ -118,6 +119,10 @@
   grid-column-start: 2;
   grid-row-start: 2;
 }
+.technologies-section .box-15 {
+  grid-column-start: 6;
+  grid-row-start: 7;
+}
 
 .technologies-grid {
   display: grid;
@@ -153,7 +158,7 @@
   width: 100%;
 }
 .project-tile iframe {
-  background-color: #f0f0f0;
+  background-color: #fefefe;
   width: 100%;
   height: 400px;
   border: 2px solid grey;
@@ -165,8 +170,9 @@
   border-radius: 10px;
 }
 .project-tile .project-title {
-  color: #dcfcf7;
+  color: #000;
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 #projects-grid {
@@ -181,7 +187,7 @@
   border: 1px solid grey;
   border-radius: 50px;
   background-color: grey;
-  color: #dcfcf7;
+  color: #fefefe;
   padding: 7px 15px;
   margin-top: 15px;
 }
@@ -205,10 +211,11 @@
   }
 }
 footer {
-  background-color: #3B3B98;
+  background-color: #000;
   padding: 10px 0;
-  color: #dcfcf7;
+  color: #fefefe;
   width: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
 #contact-section {
@@ -217,7 +224,7 @@ footer {
 }
 #contact-section a {
   font-size: 1.1rem;
-  color: #dcfcf7;
+  color: #fefefe;
   text-align: center;
   text-decoration: none;
   transition: color 0.5s;
