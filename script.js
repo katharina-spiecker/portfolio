@@ -44,7 +44,7 @@
         // 3 sections: intro, about, tech stack
         // some sections need different transition height than others
         // intro
-        if (window.scrollY < transitionHeight - 100) {
+        if (window.scrollY < transitionHeight - 300) {
             let newColor = sections[0].dataset.color;
             changeColor(newColor);
         // about

@@ -1,96 +1,154 @@
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(12, auto);
+    grid-row-gap: 5px;
+    grid-row-gap: 5px;
+    overflow: hidden;
+    font-family: 'Quantico', sans-serif;
+    font-size: 16px;
+}
+
 .technologies-section {
     color: $color-purple;
 
     .box {
         transition: all 1s;
+        text-align: center;
     }
     
     .box-1 {
-        grid-column-start: 3;
+        grid-column-start: 2;
         grid-row-start: 4;
     }
     .box-2 {
-        grid-column-start: 8;
+        grid-column-start: 2;
         grid-row-start: 6;
     }
     .box-3 {
-        grid-column-start: 8;
+        grid-column-start: 1;
         grid-row-start: 2;
     }
     .box-4 {
-        grid-column-start: 6;
+        grid-column-start: 3;
         grid-row-start: 5;
     }
     .box-5 {
-        grid-column-start: 5;
-        grid-row-start: 6;
+        grid-column-start: 1;
+        grid-row-start: 11;
     }
     .box-6 {
-        grid-column-start: 2;
-        grid-row-start: 7;
+        grid-column-start: 3;
+        grid-row-start: 11;
     }
     .box-7 {
-        grid-column-start: 8;
-        grid-row-start: 7;
+        grid-column-start: 1;
+        grid-row-start: 8;
     }
     .box-8 {
-        grid-column-start: 3;
+        grid-column-start: 2;
         grid-row-start: 1;
     }
     .box-9 {
-        grid-column-start: 4;
+        grid-column-start: 3;
         grid-row-start: 3;
     }
     .box-10 {
-        grid-column-start: 10;
-        grid-row-start: 1;
+        grid-column-start: 4;
+        grid-row-start: 7;
     }
     .box-11 {
-        grid-column-start: 10;
-        grid-row-start: 3;
+        grid-column-start: 4;
+        grid-row-start: 5;
     }
     .box-12 {
-        grid-column-start: 9;
+        grid-column-start: 1;
         grid-row-start: 4;
     }
     .box-13 {
-        grid-column-start: 5;
-        grid-row-start: 2;
+        grid-column-start: 3;
+        grid-row-start: 9;
     }
     .box-14 {
-        grid-column-start: 2;
-        grid-row-start: 2;
+        grid-column-start: 4;
+        grid-row-start: 10;
     }
     .box-15 {
-        grid-column-start: 6;
-        grid-row-start: 7;
+        grid-column-start: 2;
+        grid-row-start: 12;
     }
-}
-
-.technologies-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 8.3%);
-    grid-template-rows: repeat(8, auto);
-    grid-row-gap: 16px;
-    grid-row-gap: 16px;
-    overflow: hidden;
-    font-family: 'Quantico', sans-serif;
-    font-size: 30px;
 }
 
 @media (min-width: 992px){
     .technologies-grid {
+        grid-template-columns: repeat(12, 8.3%);
+        grid-template-rows: repeat(8, auto);
+        grid-row-gap: 16px;
+        grid-row-gap: 16px;
         font-size: 50px;
     }
+
     .technologies-section {
+        .box-1 {
+            grid-column-start: 3;
+            grid-row-start: 4;
+        }
+        .box-2 {
+            grid-column-start: 8;
+            grid-row-start: 6;
+        }
+        .box-3 {
+            grid-column-start: 8;
+            grid-row-start: 2;
+        }
+        .box-4 {
+            grid-column-start: 6;
+            grid-row-start: 5;
+        }
+        .box-5 {
+            grid-column-start: 5;
+            grid-row-start: 6;
+        }
+        .box-6 {
+            grid-column-start: 2;
+            grid-row-start: 7;
+        }
         .box-7 {
             grid-column-start: 10;
+            grid-row-start: 7;
+        }
+
+        .box-8 {
+            grid-column-start: 3;
+            grid-row-start: 1;
         }
         .box-9 {
             grid-column-start: 6;
+            grid-row-start: 3;
         }
         .box-10 {
             grid-column-start: 11;
+            grid-row-start: 1;
+        }
+        .box-11 {
+            grid-column-start: 10;
+            grid-row-start: 3;
+        }
+        .box-12 {
+            grid-column-start: 9;
+            grid-row-start: 4;
+        }
+        .box-13 {
+            grid-column-start: 5;
+            grid-row-start: 2;
+        }
+        .box-14 {
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+        .box-15 {
+            grid-column-start: 6;
+            grid-row-start: 7;
         }
     }
 }
