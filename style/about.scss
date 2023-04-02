@@ -5,6 +5,9 @@
 .about-section__text {
     margin-bottom: 40px;
     margin-top: 40px;
+    a {
+        color: $color-white;
+    }
 }
 
 .about-section__contact {

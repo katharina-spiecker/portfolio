@@ -21,24 +21,21 @@
     }
 })();
 
-// technology section moving effect
+
+// when scrolling over sections, background changes
 (function(){
+    const sections = document.querySelectorAll(".section");
+    let transitionHeight = sections[0].offsetHeight;
     let transformStyles = ["translateX(15px)", "translateX(-15px)", "translateY(15px)", "translateY(-15px)"];
     let boxes = document.querySelectorAll(".box");
+
+    // technology section moving effect on scroll and mousemove
     document.querySelector(".technologies-grid").addEventListener('mousemove', () => {
         // select a random box
         let rand = Math.floor(Math.random() * boxes.length);
         let randStyle = transformStyles[Math.floor(Math.random() * transformStyles.length)];
         boxes[rand].style = "transform:" + randStyle;
     })
-})();
-
-// when scrolling over sections, background changes
-(function(){
-    const sections = document.querySelectorAll(".section");
-    let transitionHeight = sections[0].offsetHeight;
-    // transitionHeight -= 200;
-    // console.log(transitionHeight)
 
     document.addEventListener("scroll", () => {
         // 3 sections: intro, about, tech stack
@@ -52,9 +49,12 @@
             let newColor = sections[1].dataset.color;
             changeColor(newColor);
         // tech stack
-        } else if (window.scrollY < (transitionHeight - 200) * 3) {
+        } else if (window.scrollY < (transitionHeight - 100) * 3) {
             let newColor = sections[2].dataset.color;
             changeColor(newColor);
+            let rand = Math.floor(Math.random() * boxes.length);
+            let randStyle = transformStyles[Math.floor(Math.random() * transformStyles.length)];
+            boxes[rand].style = "transform:" + randStyle;
         }
         // projects
         // } else if (window.scrollY < (transitionHeight - 200) * 4) {
