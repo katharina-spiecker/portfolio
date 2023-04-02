@@ -210,47 +210,87 @@
     width: auto;
   }
 }
-footer {
-  background-color: #000;
+.about-section {
+  color: #fefefe;
+}
+
+.about-section__text {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.about-section__contact {
   padding: 10px 0;
   color: #fefefe;
   width: 100%;
   font-family: "Open Sans", sans-serif;
 }
-
-#contact-section {
-  display: grid;
-  grid-template-columns: 40% 20% 20% 20%;
+.about-section__contact .contact-section__socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-#contact-section a {
+.about-section__contact .social-link {
+  display: inline-block;
+  margin-right: 20px;
+}
+.about-section__contact a {
   font-size: 1.1rem;
   color: #fefefe;
   text-align: center;
   text-decoration: none;
   transition: color 0.5s;
 }
-#contact-section a:hover {
+.about-section__contact a:hover {
   color: #F97F51;
 }
-#contact-section .heading {
+.about-section__contact .heading {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin: auto;
-  padding: 10px 15px;
+  margin-bottom: 20px;
 }
 
-@media (min-width: 992px) {
-  #contact-section {
-    grid-template-columns: 20% 10% 10% 10% 50%;
+@media (min-width: 1200px) {
+  .about-section {
+    position: relative;
   }
-  #contact-section a {
-    font-size: 1.3rem;
+  .about-section__text {
+    margin-top: 20px;
+  }
+  .about-section__intro {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    text-align: center;
+  }
+  .about-section__right {
+    background-color: #fefefe;
+    color: #3B3B98;
+    width: 100%;
+    height: 400px;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -400px;
+    top: -100px;
+  }
+  .about-section__contact {
+    color: #3B3B98;
+    text-align: center;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 20px;
+    bottom: 100px;
+    width: auto;
+  }
+  .about-section__contact .contact-section__socials {
+    justify-content: center;
+  }
+  .about-section__contact .social-link {
+    margin-left: 20px;
+    color: #3B3B98;
   }
 }
-.about-section {
-  color: #fefefe;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -263,6 +303,7 @@ body {
   font-size: 16px;
   font-family: "Quantico", sans-serif;
   background-color: #fefefe;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -272,9 +313,6 @@ h1, h2, h3, h4 {
 .section {
   height: 100vh;
   padding: 80px 30px 100px 30px;
-}
-.section#projects {
-  height: auto;
 }
 
 .main {

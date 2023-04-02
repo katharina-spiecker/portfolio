@@ -5,7 +5,6 @@
 @import "./animation.scss";
 @import "./technologies.scss";
 @import "./projects.scss";
-@import "./footer.scss";
 @import "./about.scss";
 
 
@@ -21,6 +20,7 @@ body {
     font-size: 16px;
     font-family: $font-robot;
     background-color: $color-white;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -30,9 +30,6 @@ h1, h2, h3, h4 {
 .section {
     height: 100vh;
     padding: 80px 30px 100px 30px;
-    &#projects {
-        height: auto;
-    }
 }
 
 .main {

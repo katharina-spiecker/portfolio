@@ -37,24 +37,30 @@
 (function(){
     const sections = document.querySelectorAll(".section");
     let transitionHeight = sections[0].offsetHeight;
-    transitionHeight -= 200;
-    console.log(transitionHeight)
+    // transitionHeight -= 200;
+    // console.log(transitionHeight)
 
     document.addEventListener("scroll", () => {
-        // 4 sections: intro, about, tech stack, projects
-        if (window.scrollY < transitionHeight) {
+        // 3 sections: intro, about, tech stack
+        // some sections need different transition height than others
+        // intro
+        if (window.scrollY < transitionHeight - 100) {
             let newColor = sections[0].dataset.color;
             changeColor(newColor);
-        } else if (window.scrollY < transitionHeight * 2) {
+        // about
+        } else if (window.scrollY < (transitionHeight - 200) * 2) {
             let newColor = sections[1].dataset.color;
             changeColor(newColor);
-        } else if (window.scrollY < transitionHeight * 3) {
+        // tech stack
+        } else if (window.scrollY < (transitionHeight - 200) * 3) {
             let newColor = sections[2].dataset.color;
             changeColor(newColor);
-        } else if (window.scrollY < transitionHeight * 4) {
-            let newColor = sections[3].dataset.color;
-            changeColor(newColor);
         }
+        // projects
+        // } else if (window.scrollY < (transitionHeight - 200) * 4) {
+        //     let newColor = sections[3].dataset.color;
+        //     changeColor(newColor);
+        // }
     });
 
     function changeColor(hexCode) {
