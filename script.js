@@ -37,9 +37,11 @@
 (function(){
     const sections = document.querySelectorAll(".section");
     let transitionHeight = sections[0].offsetHeight;
-    transitionHeight -= 100;
+    transitionHeight -= 200;
+    console.log(transitionHeight)
 
     document.addEventListener("scroll", () => {
+        // 4 sections: intro, about, tech stack, projects
         if (window.scrollY < transitionHeight) {
             let newColor = sections[0].dataset.color;
             changeColor(newColor);
@@ -48,6 +50,9 @@
             changeColor(newColor);
         } else if (window.scrollY < transitionHeight * 3) {
             let newColor = sections[2].dataset.color;
+            changeColor(newColor);
+        } else if (window.scrollY < transitionHeight * 4) {
+            let newColor = sections[3].dataset.color;
             changeColor(newColor);
         }
     });

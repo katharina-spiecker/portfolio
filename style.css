@@ -4,7 +4,7 @@
   font-size: 50px;
   font-family: "Quantico", sans-serif;
   letter-spacing: 4px;
-  color: #F97F51;
+  color: #3B3B98;
 }
 
 .typewriter span {
@@ -16,7 +16,7 @@
   text-align: center;
   font-family: "Quantico", sans-serif;
   font-size: 40px;
-  color: #F97F51;
+  color: #3B3B98;
 }
 .arrow-wrapper span {
   display: block;
@@ -58,7 +58,7 @@
   }
 }
 .technologies-section {
-  color: #F97F51;
+  color: #3B3B98;
 }
 .technologies-section .box {
   transition: all 1s;
@@ -170,7 +170,7 @@
   border-radius: 10px;
 }
 .project-tile .project-title {
-  color: #000;
+  color: #fefefe;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
@@ -247,6 +247,10 @@ footer {
     font-size: 1.3rem;
   }
 }
+.about-section {
+  color: #fefefe;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -258,6 +262,7 @@ body {
   scroll-behavior: smooth;
   font-size: 16px;
   font-family: "Quantico", sans-serif;
+  background-color: #fefefe;
 }
 
 h1, h2, h3, h4 {
@@ -288,8 +293,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   flex-wrap: wrap;
+}
+
+.font-normal {
+  font-family: "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
