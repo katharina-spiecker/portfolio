@@ -221,7 +221,7 @@
 }
 .project-tile img {
   width: 100%;
-  height: 300px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -229,6 +229,7 @@
   color: #fefefe;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
 }
 
 #projects-grid {
@@ -264,6 +265,9 @@
   }
   #projects-grid .project-tile {
     width: auto;
+  }
+  .project-tile img {
+    height: 300px;
   }
 }
 .about-section {
@@ -380,6 +384,11 @@ h1, h2, h3, h4 {
 
 a {
   text-decoration: none;
+}
+
+a.link-style {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 #brand {

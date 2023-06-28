@@ -38,7 +38,7 @@
     })
 
     document.addEventListener("scroll", () => {
-        // 3 sections: intro, about, tech stack
+        // 4 sections: intro, about, tech stack, projects
         // some sections need different transition height than others
         // intro
         if (window.scrollY < transitionHeight - 300) {
@@ -55,12 +55,10 @@
             let rand = Math.floor(Math.random() * boxes.length);
             let randStyle = transformStyles[Math.floor(Math.random() * transformStyles.length)];
             boxes[rand].style = "transform:" + randStyle;
+        } else if (window.scrollY < (transitionHeight - 200) * 4) {
+            let newColor = sections[3].dataset.color;
+            changeColor(newColor);
         }
-        // projects
-        // } else if (window.scrollY < (transitionHeight - 200) * 4) {
-        //     let newColor = sections[3].dataset.color;
-        //     changeColor(newColor);
-        // }
     });
 
     function changeColor(hexCode) {

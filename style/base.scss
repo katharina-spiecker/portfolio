@@ -40,6 +40,11 @@ a {
     text-decoration: none;
 }
 
+a.link-style {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 #brand {
     width: 40%;
 }
