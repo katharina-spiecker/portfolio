@@ -60,7 +60,7 @@
 .technologies-grid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(12, auto);
+  grid-template-rows: repeat(12, 40px);
   grid-row-gap: 5px;
   grid-row-gap: 5px;
   overflow: hidden;
@@ -77,11 +77,11 @@
 }
 .technologies-section .box-1 {
   grid-column-start: 2;
-  grid-row-start: 4;
+  grid-row-start: 5;
 }
 .technologies-section .box-2 {
   grid-column-start: 2;
-  grid-row-start: 6;
+  grid-row-start: 7;
 }
 .technologies-section .box-3 {
   grid-column-start: 1;
@@ -89,15 +89,15 @@
 }
 .technologies-section .box-4 {
   grid-column-start: 3;
-  grid-row-start: 5;
+  grid-row-start: 8;
 }
 .technologies-section .box-5 {
   grid-column-start: 1;
   grid-row-start: 11;
 }
 .technologies-section .box-6 {
-  grid-column-start: 3;
-  grid-row-start: 11;
+  grid-column-start: 1;
+  grid-row-start: 9;
 }
 .technologies-section .box-7 {
   grid-column-start: 1;
@@ -105,7 +105,7 @@
 }
 .technologies-section .box-8 {
   grid-column-start: 2;
-  grid-row-start: 1;
+  grid-row-start: 2;
 }
 .technologies-section .box-9 {
   grid-column-start: 3;
@@ -120,26 +120,34 @@
   grid-row-start: 5;
 }
 .technologies-section .box-12 {
-  grid-column-start: 1;
-  grid-row-start: 4;
-}
-.technologies-section .box-13 {
-  grid-column-start: 3;
-  grid-row-start: 9;
-}
-.technologies-section .box-14 {
   grid-column-start: 4;
   grid-row-start: 10;
 }
+.technologies-section .box-13 {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+.technologies-section .box-14 {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
 .technologies-section .box-15 {
   grid-column-start: 2;
-  grid-row-start: 12;
+  grid-row-start: 10;
+}
+.technologies-section .box-16 {
+  grid-column-start: 1;
+  grid-row-start: 11;
+}
+.technologies-section .box-17 {
+  grid-column-start: 3;
+  grid-row-start: 11;
 }
 
 @media (min-width: 992px) {
   .technologies-grid {
     grid-template-columns: repeat(12, 8.3%);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(8, 80px);
     grid-row-gap: 16px;
     grid-row-gap: 16px;
     font-size: 50px;
@@ -169,8 +177,8 @@
     grid-row-start: 7;
   }
   .technologies-section .box-7 {
-    grid-column-start: 10;
-    grid-row-start: 7;
+    grid-column-start: 2;
+    grid-row-start: 5;
   }
   .technologies-section .box-8 {
     grid-column-start: 3;
@@ -203,6 +211,14 @@
   .technologies-section .box-15 {
     grid-column-start: 6;
     grid-row-start: 7;
+  }
+  .technologies-section .box-16 {
+    grid-column-start: 11;
+    grid-row-start: 4;
+  }
+  .technologies-section .box-17 {
+    grid-column-start: 11;
+    grid-row-start: 6;
   }
 }
 .project-tile {
