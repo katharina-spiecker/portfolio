@@ -16,7 +16,7 @@
   text-align: center;
   font-family: "Quantico", sans-serif;
   font-size: 40px;
-  color: #3B3B98;
+  color: rgba(130, 63, 157, 0.737254902);
 }
 .arrow-wrapper span {
   display: block;
@@ -420,6 +420,20 @@ header {
 
 .font-normal {
   font-family: "Open Sans", sans-serif;
+}
+
+.title-gradient-dark {
+  color: transparent;
+  background: linear-gradient(90deg, #cf46c1 10%, #20d0ca 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.title-gradient-light {
+  color: transparent;
+  background: linear-gradient(90deg, #f951e8 10%, #1dfff7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -59,3 +59,17 @@ header {
 .font-normal {
     font-family: $font-normal;
 }
+
+.title-gradient-dark {
+    color: transparent;
+    background: $gradient-dark;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.title-gradient-light {
+    color: transparent;
+    background: $gradient-light;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
