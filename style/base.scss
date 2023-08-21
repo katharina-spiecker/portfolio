@@ -27,6 +27,11 @@ h1, h2, h3, h4 {
     font-family: $font-robot;
 }
 
+.h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
 .section {
     height: 100vh;
     padding: 80px 30px 100px 30px;
@@ -72,4 +77,10 @@ header {
     background: $gradient-light;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+@media (min-width: 992px){
+    .h1 {
+        font-size: 48px;
+    }
 }

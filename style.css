@@ -40,6 +40,11 @@
   animation-duration: 1.2s;
 }
 
+.upwards-fade-in {
+  animation-name: upwards-fade-in;
+  animation-duration: 1.2s;
+}
+
 .animation-hidden {
   opacity: 0;
 }
@@ -47,7 +52,17 @@
 @keyframes downwards-fade-in {
   0% {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1 !important;
+    transform: none;
+  }
+}
+@keyframes upwards-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
   }
   100% {
     opacity: 1 !important;
@@ -408,6 +423,11 @@ h1, h2, h3, h4 {
   font-family: "Quantico", sans-serif;
 }
 
+.h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
 .section {
   height: 100vh;
   padding: 80px 30px 100px 30px;
@@ -453,6 +473,12 @@ header {
   background: linear-gradient(90deg, #f951e8 10%, #1dfff7 80%);
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+@media (min-width: 992px) {
+  .h1 {
+    font-size: 48px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -38,6 +38,11 @@
     animation-duration: 1.2s;
 }
 
+.upwards-fade-in {
+    animation-name: upwards-fade-in;
+    animation-duration: 1.2s;
+}
+
 .animation-hidden {
     opacity: 0;
 }
@@ -45,7 +50,18 @@
 @keyframes downwards-fade-in {
     0% {
         opacity: 0;
-        transform: translate3d(0, -100%, 0);
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1 !important;
+        transform: none;
+    }
+}
+
+@keyframes upwards-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
     }
     100% {
         opacity: 1 !important;
