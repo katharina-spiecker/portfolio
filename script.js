@@ -65,3 +65,42 @@
         document.body.style = "background-color:" + hexCode;
     }
 })();
+
+// title move downwards animation
+(function(){
+    let targets = document.querySelectorAll(".animation-section-fade-in");
+    let animationCompleted = [];
+    targets.forEach(() => {
+        animationCompleted.push(false)
+    })
+    // Check on page load (in case the section is already in the viewport)
+    addAnimationWhenVisible();
+    // Check on scroll in case element is lower in DOM
+    window.addEventListener("scroll", addAnimationWhenVisible);
+
+    function addAnimationWhenVisible() {
+        targets.forEach((target, i) => {
+            if (isElementInViewport(target)) {
+                target.classList.add("downwards-fade-in");
+                target.classList.remove("animation-hidden");
+                // Remove the scroll event listener to prevent unnecessary checks
+                // mark as completed
+                animationCompleted[i] = true;
+                // if all completed: remove event listener
+                if(!animationCompleted.includes(false)) {
+                    window.removeEventListener("scroll", addAnimationWhenVisible);
+                } 
+            }
+        })
+    }
+
+    function isElementInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+})();

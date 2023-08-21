@@ -33,6 +33,26 @@
     animation-iteration-count: infinite; 
 }
 
+.downwards-fade-in {
+    animation-name: downwards-fade-in;
+    animation-duration: 1.2s;
+}
+
+.animation-hidden {
+    opacity: 0;
+}
+
+@keyframes downwards-fade-in {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1 !important;
+        transform: none;
+    }
+}
+
 @keyframes blink-animation {
     from {
         visibility: visible;
