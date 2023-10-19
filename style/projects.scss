@@ -1,17 +1,9 @@
 .project-tile {
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin: auto;
     padding: 10px 15px;
     text-align: center;
     width: 100%;
-
-    iframe {
-        background-color: $color-white;
-        width: 100%;
-        height: 400px;
-        border: 2px solid grey;
-    }
 
     img {
         width: 100%;
@@ -20,19 +12,39 @@
         border-radius: 10px;
     }
 
+    .img-wrapper {
+        border-radius: 10px;
+        padding: 30px 30px 20px 30px;
+        border: 4px solid #fff;
+    }
+
     .project-title {
        color: $color-white;
        text-decoration: none;
        font-family: $font-normal;
-       margin-bottom: 20px;
+       margin-top: 15px;
+       margin-bottom: 0;
+       font-weight: normal;
+       font-size: 18px;
     }
 }
 
-#projects-grid {
+.projects-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+}
+
+.projects {
+    .stack-info {
+        font-weight: bold;
+        color: $color-white;
+        text-decoration: none;
+        font-family: $font-robot;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
 
 .view-project {
@@ -49,9 +61,18 @@
     background-color: rgb(56, 56, 56);
 }
 
+.projects-section {
+    margin-bottom: 40px;
+}
+
+.project-section__title {
+    font-size: 25px;
+    text-transform: lowercase;
+}
+
 @media (min-width: 992px){
-    #projects-grid {
-        margin-top: 30px;
+    .projects-grid {
+        // margin-top: 30px;
         padding: 20px;
         display: grid;
         justify-content: center;
@@ -63,9 +84,35 @@
         }
     }
 
+    .projects-section {
+        margin-bottom: 80px;
+    }
+
+    .project-section__title {
+        font-size: 30px;
+    }
+
+    .project-title {
+        font-size: 22px;
+    }
+
     .project-tile {
-        img {
+        .img-square {
+            width: 300px;
             height: 300px;
+            object-fit: cover;
+        }
+        
+        .img-rectangle-long {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .img-rectangle-height {
+            width: 300px;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
