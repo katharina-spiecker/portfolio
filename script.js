@@ -41,8 +41,8 @@
         // 5 sections: intro, about, tech stack, projects 1, projects 2
         // some sections need different transition height than others
         // intro
-        console.log("window.scrollY", window.scrollY)
         console.log(sections[0].getBoundingClientRect().bottom)
+
         if (sections[0].getBoundingClientRect().bottom > 200) {
             let newColor = sections[0].dataset.color;
             changeColor(newColor);
@@ -62,8 +62,12 @@
             let newColor = sections[3].dataset.color;
             changeColor(newColor);
         // project 2
-        } else if (sections[4].getBoundingClientRect().bottom > 0) {
+        } else if (sections[4].getBoundingClientRect().bottom > 100) {
             let newColor = sections[4].dataset.color;
+            changeColor(newColor);
+        // project 3
+        } else if (sections[5].getBoundingClientRect().bottom > 0) {
+            let newColor = sections[5].dataset.color;
             changeColor(newColor);
         }
     });

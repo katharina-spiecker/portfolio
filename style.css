@@ -96,7 +96,6 @@
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(12, 40px);
   grid-row-gap: 5px;
-  grid-row-gap: 5px;
   overflow: hidden;
   font-family: "Quantico", sans-serif;
   font-size: 16px;
