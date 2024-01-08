@@ -85,6 +85,14 @@
         grid-column-start: 3;
         grid-row-start: 11;
     }
+    .box-18 {
+        grid-column-start: 3;
+        grid-row-start: 4;
+    }
+    .box-19 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
 }
 
 @media (min-width: 992px){
@@ -165,6 +173,14 @@
         .box-17 {
             grid-column-start: 11;
             grid-row-start: 6;
+        }
+        .box-18 {
+            grid-column-start: 6;
+            grid-row-start: 1;
+        }
+        .box-19 {
+            grid-column-start: 9;
+            grid-row-start: 1;
         }
     }
 }

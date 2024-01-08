@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/katharina-spiecker/portfolio#readme",
   "devDependencies": {
-    "sass": "^1.56.0"
+    "sass": "^1.69.7"
   }
 }
