@@ -1,25 +1,25 @@
 // typewriter effect
-(function(){
-    const targetText = document.querySelector(".typewriter");
-    const splitTargetText = targetText.innerText.split("");
-    let newTargetText = "";
-    splitTargetText.forEach((character) => {
-        newTargetText += "<span>" + character + "</span>";
-    });
+// (function(){
+//     const targetText = document.querySelector(".typewriter");
+//     const splitTargetText = targetText.innerText.split("");
+//     let newTargetText = "";
+//     splitTargetText.forEach((character) => {
+//         newTargetText += "<span>" + character + "</span>";
+//     });
     
-    targetText.innerHTML = newTargetText;
-    let index = 0;
-    const spans = targetText.querySelectorAll("span");
-    const timer = setInterval(onTick, 250);
+//     targetText.innerHTML = newTargetText;
+//     let index = 0;
+//     const spans = targetText.querySelectorAll("span");
+//     const timer = setInterval(onTick, 250);
     
-    function onTick() {
-        spans[index].classList.add("visible");
-        index++;
-        if (index === spans.length) {
-            clearInterval(timer);
-        }
-    }
-})();
+//     function onTick() {
+//         spans[index].classList.add("visible");
+//         index++;
+//         if (index === spans.length) {
+//             clearInterval(timer);
+//         }
+//     }
+// })();
 
 
 // when scrolling over sections, background changes
@@ -41,33 +41,32 @@
         // 5 sections: intro, about, tech stack, projects 1, projects 2
         // some sections need different transition height than others
         // intro
-        console.log(sections[0].getBoundingClientRect().bottom)
 
-        if (sections[0].getBoundingClientRect().bottom > 200) {
+        // if (sections[0].getBoundingClientRect().bottom > 200) {
+        //     let newColor = sections[0].dataset.color;
+        //     changeColor(newColor);
+        // about
+        if (sections[0].getBoundingClientRect().bottom > 300) {
             let newColor = sections[0].dataset.color;
             changeColor(newColor);
-        // about
+        // tech stack
         } else if (sections[1].getBoundingClientRect().bottom > 100) {
             let newColor = sections[1].dataset.color;
-            changeColor(newColor);
-        // tech stack
-        } else if (sections[2].getBoundingClientRect().bottom > 100) {
-            let newColor = sections[2].dataset.color;
             changeColor(newColor);
             let rand = Math.floor(Math.random() * boxes.length);
             let randStyle = transformStyles[Math.floor(Math.random() * transformStyles.length)];
             boxes[rand].style = "transform:" + randStyle;
         // project 1
-        } else if (sections[3].getBoundingClientRect().bottom > 200) {
-            let newColor = sections[3].dataset.color;
+        } else if (sections[2].getBoundingClientRect().bottom > 200) {
+            let newColor = sections[2].dataset.color;
             changeColor(newColor);
         // project 2
-        } else if (sections[4].getBoundingClientRect().bottom > 100) {
-            let newColor = sections[4].dataset.color;
+        } else if (sections[3].getBoundingClientRect().bottom > 100) {
+            let newColor = sections[3].dataset.color;
             changeColor(newColor);
         // project 3
-        } else if (sections[5].getBoundingClientRect().bottom > 0) {
-            let newColor = sections[5].dataset.color;
+        } else if (sections[4].getBoundingClientRect().bottom > 0) {
+            let newColor = sections[4].dataset.color;
             changeColor(newColor);
         }
     });

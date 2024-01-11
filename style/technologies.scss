@@ -10,11 +10,8 @@
 }
 
 .technologies-section {
-    color: $color-purple;
-
     .box {
-        transition: all 1s;
-        text-align: center;
+        color: $color-purple;
     }
     
     .box-1 {
@@ -95,7 +92,8 @@
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
+
     .technologies-grid {
         grid-template-columns: repeat(12, 8.3%);
         grid-template-rows: repeat(8, 80px);
@@ -105,6 +103,15 @@
     }
 
     .technologies-section {
+        .box {
+            width: 300px;
+            transition: all 1s;
+            text-align: center;
+            color: transparent;
+            background: $gradient-light;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
         .box-1 {
             grid-column-start: 3;
             grid-row-start: 4;
@@ -127,7 +134,7 @@
         }
         .box-6 {
             grid-column-start: 2;
-            grid-row-start: 7;
+            grid-row-start: 6;
         }
         .box-7 {
             grid-column-start: 2;
@@ -140,7 +147,7 @@
         }
         .box-9 {
             grid-column-start: 6;
-            grid-row-start: 3;
+            grid-row-start: 4;
         }
         .box-10 {
             grid-column-start: 11;
@@ -167,12 +174,12 @@
             grid-row-start: 7;
         }
         .box-16 {
-            grid-column-start: 11;
-            grid-row-start: 4;
+            grid-column-start: 5;
+            grid-row-start: 6;
         }
         .box-17 {
-            grid-column-start: 11;
-            grid-row-start: 6;
+            grid-column-start: 9;
+            grid-row-start: 5;
         }
         .box-18 {
             grid-column-start: 6;

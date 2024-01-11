@@ -1,5 +1,6 @@
 .about-section {
     color: $color-white;
+    overflow: hidden;
 }
 
 .about-section__text {
@@ -24,7 +25,6 @@
 
     .social-link {
         display: inline-block;
-        margin-right: 20px;
     }
 
     a {
@@ -89,7 +89,6 @@
         }
 
         .social-link {
-            margin-left: 20px;
             color: $color-purple;
         }
     }
