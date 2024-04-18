@@ -1,0 +1,34 @@
+@mixin outlined-text($color) {
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: $color;
+    transition: all 1s;
+
+    &:hover {
+        color: $color;
+    }
+}
+
+@mixin sm-up {
+	@media (min-width: 576px) { 
+        @content;
+    }
+}
+
+@mixin md-up {
+	@media (min-width: 768px) { 
+        @content; 
+    }
+}
+
+@mixin lg-up {
+	@media (min-width: 992px) { 
+        @content; 
+    }
+}
+
+@mixin xl-up {
+	@media (min-width: 1200px) { 
+        @content; 
+    }
+}

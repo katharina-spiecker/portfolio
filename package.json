@@ -5,8 +5,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass style/base.scss style.css",
-    "watch": "sass --watch style/base.scss style.css"
+    "build": "sass style/main.scss style.css",
+    "watch": "sass --watch style/main.scss style.css"
   },
   "repository": {
     "type": "git",

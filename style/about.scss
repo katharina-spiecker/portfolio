@@ -11,6 +11,10 @@
     }
 }
 
+.about-title {
+    font-size: 40px;
+}
+
 .about-section__contact {
     padding: 10px 0;
     color: $color-white;
@@ -46,7 +50,11 @@
     }
 }
 
-@media (min-width: 1200px){
+.about__special-letters {
+    @include outlined-text($color-white);
+}
+
+@include xl-up {
     .about-section {
         position: relative;
     }
@@ -77,11 +85,9 @@
     .about-section__contact {
         color: $color-purple;
         text-align: center;
-        // correct rotation again
-        transform: rotate(45deg);
         position: absolute;
-        left: 20px;
-        bottom: 100px;
+        left: 50px;
+        bottom: 140px;
         width: auto;
 
         .contact-section__socials {
@@ -91,5 +97,9 @@
         .social-link {
             color: $color-purple;
         }
+    }
+
+    .contact__special-letters {
+        @include outlined-text($color-purple);
     }
 }

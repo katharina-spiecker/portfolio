@@ -72,7 +72,7 @@
     });
 
     function changeColor(hexCode) {
-        document.body.style = "background-color:" + hexCode;
+        document.querySelector("main").style = "background-color:" + hexCode;
     }
 })();
 

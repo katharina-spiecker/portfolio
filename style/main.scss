@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 @import "./variables.scss";
+@import "./mixins.scss";
 @import "./animation.scss";
 @import "./technologies.scss";
 @import "./projects.scss";
 @import "./about.scss";
-
+@import "./instructor.scss";
 
 * {
     box-sizing: border-box;
@@ -19,7 +20,6 @@ body {
     scroll-behavior: smooth;
     font-size: 16px;
     font-family: $font-robot;
-    background-color: #3B3B98;
     overflow-x: hidden;
 }
 
@@ -37,12 +37,16 @@ h1, h2, h3, h4 {
     padding: 80px 15px 100px 15px;
 }
 
-.main {
-    padding-bottom: 100px;
+main {
+    background-color: $color-purple;
+    transition: background .2s;
 }
 
 a {
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 a.link-style {
@@ -77,6 +81,14 @@ header {
     background: $gradient-light;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+.btn-shine-through {
+    background-color: rgba(255, 255, 255, 0.43);
+    border: 1px solid white;
+    color: black;
+    border-radius: 20px;
+    padding: 5px 20px;
 }
 
 @media (min-width: 992px){

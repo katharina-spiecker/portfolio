@@ -92,7 +92,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@include lg-up {
 
     .technologies-grid {
         grid-template-columns: repeat(12, 8.3%);
