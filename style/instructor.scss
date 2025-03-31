@@ -4,7 +4,8 @@ header, main {
 }
 
 .teaching {
-    background-color: $color-turquise;
+    color: $color-white;
+    background-color: $color-black;
     position: sticky;
     z-index: 0;
     bottom: 0;
@@ -16,7 +17,7 @@ header, main {
     justify-content: flex-end;
 
     a {
-        color: black;
+        color: $color-white;
     }
 
     &.section {
